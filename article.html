@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Article</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link rel="stylesheet" type="text/css" href="css/post.css">
+  <link rel="stylesheet" type="text/css" href="css/article.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="article.js"></script>
+</head>
+<body>
+ 
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Posts <span class="sr-only">(current)</span></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html">Log in</a></li>
+          
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 profile col-sm-12 col-xs-12">
+        <div class="profile-centered">
+          <div class="profile-content">
+            <img src="img/cumeo.jpg" alt="cumeo image" class="img-circle profile-image">
+            <h4>Pham Nhat Phi</h4>
+            <p>Ruby Internship @NEOLAB</p>
+            <hr class="hidden-sm hidden-xs">
+            <p>Share this page:</p> 
+            <ul class="clearfix">
+             <li><img src="img/fb.png" alt="facebook"></li>
+             <li><img src="img/is.png" alt="istagram"></li>
+             <li><img src="img/tw.png" alt="twitter"></li>
+           </ul>
+         </div>
+         </div>
+       
+     </div>
+     <div class="col-md-8 box">
+
+      <article class="header">
+        <div id="alert"></div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+        <div class="lead">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       </div>
+     </article>
+     <div id="comments">
+       <h2>Comments</h2>
+       <div class="row">
+        <div class="col-md-11">
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <footer>
+            <small><b>Phi Pham</b> <i>(phipn@gmail.com) </i> at 4/15/2018, 3:12:50 PM</small>
+          </footer>
+          <hr>
+        </div>
+        <div class="col-md-1 comment-num">1</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-11">
+          <p>Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <footer>
+            <small><b>Fi Fi</b> <i>(fifi@gmail.com) </i> at 4/15/2018, 3:12:50 PM</small>
+          </footer>
+          <hr>
+        </div>
+        <div class="col-md-1 comment-num">2</div>
+      </div>
+
+      <form>
+        <h3>Have your say</h3>
+        <p>
+          <label class="sr-only">Message</label>
+          <textarea class="form-control" placeholder="Message" id="message" required autocomplete="false" ></textarea>
+        </p>
+
+        <p>
+          <label class="sr-only">Full Name</label>
+          <input type="text" class="form-control" placeholder="Full Name" required>
+        </p>
+
+        <p>
+          <label class="sr-only">Email Address</label>
+          <input type="email" class="form-control" placeholder="Email Address" required>
+        </p>
+
+        <p>
+          <input type="button" class="btn btn-primary btn-block" value="Send Message" onclick="sendMessage()">
+        </p>
+
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
